@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f9fafc, #faecb5); /* Exemplo de cores azul e amarelo */
+    color: #f5dc6b;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {o
+    background:  rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align:center;
+    color #fff
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin: 0;
+    position: relative;
+}
+
+/* Pseudo-elemento estilizado */
+header h1::before {
+    content: "★ ";
+    color: gold;
+    font-size: 0.5em;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ebcf34;
+    font-size: 2.5em;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+/* Estilo para a imagem com float e transparência */
+.float-img {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    height: auto;
+    opacity: 0.35;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
+
+/* Pseudo-elemento antes do título */
+h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 4px;
+    background-color: #19547b;
+}
+
+.biography-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.biography-content .image {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 10;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.biography-content .image:hover {
+    opacity: 5;
+    transform: scale(1.05);
+}
+
+.biography-content p {
+    flex: 2 1 500px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 
+
+}
+    
+/* Limpa o float para garantir que o rodapé fique abaixo do conteúdo */
+.clear {
+    clear: both;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #f8f5f5;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
